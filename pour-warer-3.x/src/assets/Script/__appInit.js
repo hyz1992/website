@@ -1,0 +1,3 @@
+(function(root){var exports=undefined,module=undefined,require=undefined;var define=undefined;var self=root,window=root,global=root,globalThis=root;(function(){window.display={};display.width=720;display.height=1280;display.cx=360;display.cy=640;display.gapHeight=0;display.sys_lang="";display.sys_region="";display.sys_langCode="";display.screenScale=cc.v2(1,1);display.aspectRatio=1280/720;display.isLongScreen=false;display.isInBackground=false;//是否在后台运行
+}).call(root);})(// The environment-specific global.
+function(){if(typeof globalThis!=='undefined')return globalThis;if(typeof self!=='undefined')return self;if(typeof window!=='undefined')return window;if(typeof global!=='undefined')return global;if(typeof this!=='undefined')return this;return{};}.call(this));
