@@ -1,17 +1,22 @@
-System.register(["./application.73e65.js"], function (_export, _context) {
+System.register(["./application.5e231.js"], function (_export, _context) {
   "use strict";
 
-  var Application, application;
+  var Application, canvas, $p, bcr, application;
 
   function topLevelImport(url) {
     return System["import"](url);
   }
 
   return {
-    setters: [function (_application73e65Js) {
-      Application = _application73e65Js.Application;
+    setters: [function (_application5e231Js) {
+      Application = _application5e231Js.Application;
     }],
     execute: function () {
+      canvas = document.getElementById('GameCanvas');
+      $p = canvas.parentElement;
+      bcr = $p.getBoundingClientRect();
+      canvas.width = bcr.width;
+      canvas.height = bcr.height;
       application = new Application();
       topLevelImport('cc').then(function (engine) {
         return application.init(engine);
