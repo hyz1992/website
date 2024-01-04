@@ -1,0 +1,51 @@
+{
+    "importBase": "import",
+    "nativeBase": "native",
+    "name": "resources",
+    "deps": [],
+    "uuids": [
+        "06868129-3348-48d2-8713-cbb8662febd0",
+        "06868129-3348-48d2-8713-cbb8662febd0@6c48a",
+        "06868129-3348-48d2-8713-cbb8662febd0@f9941",
+        "06b241fe6",
+        "befe51d7-126e-4457-af19-06efaaf842d1",
+        "f9415f50-5adc-4219-b322-5233ec2e37e4"
+    ],
+    "paths": {
+        "befe51d7-126e-4457-af19-06efaaf842d1": [
+            "level_cfg",
+            "cc.JsonAsset"
+        ],
+        "f9415f50-5adc-4219-b322-5233ec2e37e4": [
+            "prefabs/Particle2D",
+            "cc.Prefab"
+        ]
+    },
+    "scenes": {},
+    "packs": {
+        "06b241fe6": [
+            "06868129-3348-48d2-8713-cbb8662febd0@f9941",
+            "f9415f50-5adc-4219-b322-5233ec2e37e4"
+        ]
+    },
+    "versions": {
+        "import": [
+            "06868129-3348-48d2-8713-cbb8662febd0",
+            "a2533",
+            "06868129-3348-48d2-8713-cbb8662febd0@6c48a",
+            "afc7a",
+            "06b241fe6",
+            "5a143",
+            "befe51d7-126e-4457-af19-06efaaf842d1",
+            "b8a59"
+        ],
+        "native": [
+            "06868129-3348-48d2-8713-cbb8662febd0",
+            "bad39"
+        ]
+    },
+    "redirect": [],
+    "debug": true,
+    "extensionMap": {},
+    "hasPreloadScript": true
+}
