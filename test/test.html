@@ -12,12 +12,17 @@
         setTimeout(()=>{
             
             console.log("------测试2")
-            document.location = 'pa66mt://{"cmd":"feedbackUploadPic"}'
+            document.location = 'pa66mt://1111'
         },2000)
         setTimeout(()=>{
+            
             console.log("------测试3")
-            document.location = 'pa66mt://{"cmd":"feedbackUploadPic"}'
+            document.location = 'pa66mt://%7B%22cmd%22%3A%22feedbackUploadPic%22%7D'
         },2000*2)
+        setTimeout(()=>{
+            console.log("------测试4")
+            document.location = 'pa66mt://{"cmd":"feedbackUploadPic"}'
+        },2000*4)
         
     }
 </script>
