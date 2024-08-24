@@ -1,0 +1,49 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+    <style>  
+        /* 创建一个 CSS 类来样式化按钮 */  
+        .center-button {  
+            display: flex; /* 使用 flexbox 来居中元素 */  
+            justify-content: center; /* 水平居中 */  
+            align-items: center; /* 垂直居中（如果容器有高度的话）*/  
+            height: 100vh; /* 设置为视口高度，使按钮在垂直方向上居中 */  
+            margin: 0; /* 移除外边距 */  
+            padding: 20px; /* 添加一些内边距 */  
+            box-sizing: border-box; /* 确保 padding 不会增加元素的总宽度和高度 */  
+        }  
+  
+        .big-button {  
+            font-size: 20px; /* 增大按钮上的文字大小 */  
+            padding: 10px 20px; /* 增大按钮的内边距 */  
+        }  
+    </style>  
+</head>  
+<body>  
+    <div class="center-button">  
+        <input type="button" class="big-button" value="按钮5" onclick="onClick()"/>  
+    </div>  
+</body>  
+<script>  
+    function onClick () {
+        // 其中一个设置 URL 方案
+        console.log("------测试1")
+        document.location = 'pa66mt://a=1&b=2';
+        setTimeout(()=>{
+            
+            console.log("------测试2")
+            document.location = 'pa66mt://1111'
+        },2000)
+        setTimeout(()=>{
+            
+            console.log("------测试3")
+            document.location = 'pa66mt://%7B%22cmd%22%3A%22feedbackUploadPic%22%7D'
+        },2000*2)
+        setTimeout(()=>{
+            console.log("------测试4")
+            document.location = 'pa66mt://{"cmd":"feedbackUploadPic"}'
+        },2000*4)
+        
+    }
+</script>  
+</html>
