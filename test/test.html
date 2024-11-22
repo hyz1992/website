@@ -24,6 +24,7 @@
     <div class="center-button">
         <input type="button" class="big-button" value="按钮5" onclick="onClick()"/>
         <input type="button" class="big-button" value="测试 URI Scheme" onclick="testUriScheme()"/>
+        <input type="button" class="big-button" value="测试 app link" onclick="testAppLink()"/>
     </div>
 </body>
 <script>
@@ -56,11 +57,20 @@
 
     function testUriScheme() {
         // 弹出调试信息
-        alert("测试 URI Scheme 按钮被点击，尝试唤起 App: pa66mt://");
+        alert("测试 URI Scheme 按钮被点击，尝试唤起 App: pa66mt://aaa=111");
         
         // 调用指定的 URI Scheme
         console.log("测试 URI Scheme 被触发");
         document.location = 'pa66mt://aaa=111';
+    }
+
+    function testAppLink() {
+        // 弹出调试信息
+        alert("测试 URI Scheme 按钮被点击，尝试唤起 App: https://pa.66mt.com?a=1&b=2&c=3");
+        
+        // 调用指定的 URI Scheme
+        console.log("测试 URI Scheme 被触发");
+        document.location = 'https://pa.66mt.com?a=1&b=2&c=3';
     }
 </script>
 </html>
